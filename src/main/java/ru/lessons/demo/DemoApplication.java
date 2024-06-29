@@ -11,6 +11,7 @@ public class DemoApplication {
 
 		TestBean testBean = context.getBean("testBean", TestBean.class);
 		System.out.println(testBean.getName());
+		System.out.println("Test");
 
 
 		context.close();
