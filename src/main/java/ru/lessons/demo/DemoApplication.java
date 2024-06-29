@@ -9,10 +9,10 @@ public class DemoApplication {
 	public static void main(String[] args) {
 		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
 
-		TestBean testBean = context.getBean("testBean", TestBean.class);
-		System.out.println(testBean.getName());
-		System.out.println("Test");
+		Music music = context.getBean("musicBean", Music.class);
+		MusicPlayer musicPlayer = new MusicPlayer(music);
 
+		musicPlayer.playMusic();
 
 		context.close();
 	}
