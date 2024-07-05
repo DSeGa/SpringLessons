@@ -1,5 +1,8 @@
 package ru.lessons.demo;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class RapMusic implements Music {
 
     @Override

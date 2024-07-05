@@ -1,16 +1,16 @@
 package ru.lessons.demo;
 
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 @SpringBootApplication
 public class DemoApplication {
 
 	public static void main(String[] args) {
-		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+		AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(SpringConfig.class);
 
-		MusicPlayer musicPlayer = context.getBean("musicPlayer", MusicPlayer.class);
-		musicPlayer.playMusic();		
+		Computer computer = context.getBean("computer", Computer.class);
+		System.out.println(computer);
 
 		context.close();
 	}
