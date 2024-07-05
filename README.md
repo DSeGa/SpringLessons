@@ -4,4 +4,4 @@
 Урок №2. Инверсия управления </br>
 Урок №3. Внедрение зависимостей, часть 1. </br>
 Урок №4. Внедрение зависимостей, часть 2. Внедрен список. </br>
-Урок №4. Использование Component, AutoWired, PostConstruct, PreDestroy. Перенос конфигурации из XML в Java Code </br>
+Урок №5. Использование Component, AutoWired, PostConstruct, PreDestroy. Перенос конфигурации из XML в Java Code </br>
